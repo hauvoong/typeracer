@@ -30,9 +30,18 @@
                         <strong>Typing Test</strong>
                     </div>
                     <div class="card-body">
+                        <div class="mb-3 d-flex align-items-center gap-2">
+                            <label for="difficulty-select" class="mb-0">Difficulty:</label>
+                            <select id="difficulty-select" class="form-select w-auto">
+                                <option value="easy">Easy</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="hard">Hard</option>
+                            </select>
+                            <button id="start-btn" class="btn btn-success ms-2">Start Test</button>
+                        </div>
+
                         <p id="test-text" class="mb-3">The quick brown fox jumps over the lazy dog.</p>
-                        <textarea class="form-control mb-3" rows="3" placeholder="Start typing here..."></textarea>
-                        <button class="btn btn-success">Start Test</button>
+                        <textarea id="input-area" class="form-control mb-3" rows="3" placeholder="Start typing here..." disabled></textarea>
                     </div>
                 </div>
             </div>
@@ -54,42 +63,7 @@
         </div>
     </div>
 
-    <!-- Bootstrap input group -->
-    <div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon1">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-</div>
-
-<div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Recipient’s username" aria-label="Recipient’s username" aria-describedby="basic-addon2">
-  <span class="input-group-text" id="basic-addon2">@example.com</span>
-</div>
-
-<div class="mb-3">
-  <label for="basic-url" class="form-label">Your vanity URL</label>
-  <div class="input-group">
-    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
-  </div>
-  <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
-</div>
-
-<div class="input-group mb-3">
-  <span class="input-group-text">$</span>
-  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-  <span class="input-group-text">.00</span>
-</div>
-
-<div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-  <span class="input-group-text">@</span>
-  <input type="text" class="form-control" placeholder="Server" aria-label="Server">
-</div>
-
-<div class="input-group">
-  <span class="input-group-text">With textarea</span>
-  <textarea class="form-control" aria-label="With textarea"></textarea>
-</div>
+    
 
     
     <script
@@ -98,5 +72,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://kit.fontawesome.com/5ca234e80d.js" crossorigin="anonymous"></script>
+        <script src="assets/js/script.js"></script>
   </body>
 </html>
